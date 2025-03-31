@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f4f4f4;
+        }
+        
+        /*--I added a padding and white background to give the box a card-like appearance-*/
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        
+        /*Added proper spacing for the input field and added an extended width for good user readability*/
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        /* Highlighted the input field with a blue border when it is focused */
+        input:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+        
+        /* The button is styled in a way that makes it visually appealing and very user-friendly */
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        /* Added a hover effect to the button to provide visual feedback upon user interaction */
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Styled for visibility */
+        p {
+            font-size: 18px;
+            margin-top: 15px;
+            font-weight: bold;
+        }

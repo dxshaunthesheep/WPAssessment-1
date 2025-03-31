@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petrol Calculator</title>
+<link href="cssex6.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <h2>Petrol Calculator</h2>
+        
+        <!-- Input field for petrol cost per liter with a default value of 1.72 -->
+        <label for="costPerLiter">Cost per liter ($):</label>
+        <input type="number" id="costPerLiter" value="1.72" step="0.01">
+        
+        <!-- Input field for liters purchased with a default value of 0 -->
+        <label for="liters">Liters purchased:</label>
+        <input type="number" id="liters" value="0" step="0.01">
+        
+        <!-- Button to calculate total cost when clicked -->
+        <button onclick="calculateTotal()">Calculate</button>
+        
+        <!-- Paragraph to display the total cost of petrol purchased -->
+        <p id="totalCost">Total Cost: $0.00</p>
+    </div>
+
+    <script>
+        function calculateTotal() {
+            // Gets the cost per liter which is already embedded into the system and converts it to decimal value (float) //
+            let costPerLiter = parseFloat(document.getElementById('costPerLiter').value);
+            
+            // Gets the number of liters inputted by the user and converts that value into a decimal (float) //
+            let liters = parseFloat(document.getElementById('liters').value);
+            
+            // Calculate total cost by multiplying cost per liter with liters purchased //
+            let total = costPerLiter * liters;
+            
+            // Displays the total cost, which is rounded up to 2 decimal place for maximum accuracy //
+            document.getElementById('totalCost').innerText = `Total Cost: $${total.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
