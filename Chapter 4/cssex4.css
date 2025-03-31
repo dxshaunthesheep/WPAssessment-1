@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .header {
+    background-color: #220a33;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Tahoma;
+        }
+        .nav {
+            background-color: #220a33;
+            text-align: center;
+            padding: 10px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .welcome {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .main {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .left {
+            width: 60%;
+        }
+        .right {
+            width: 35%;
+            background-color: #1d3b74;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .lineup {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #FFFFFF;
+    border-width: thick;
+        }
+        .footer {
+            background-color: #6a0dad;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }.row .col-xl-6 .right_article {
+    background-color: #172d67;
+    color: #FFFFFF;
+}
+.row .col-xl-5 img {
+    background-color: #172D67;
+}
+.header h2 u {
+    font-family: Tahoma;
+}
+    .row .col-xl-6 .right_article li {
+    font-family: Arial;
+}
